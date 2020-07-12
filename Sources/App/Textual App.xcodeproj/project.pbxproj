@@ -6492,7 +6492,7 @@
 				ORGANIZATIONNAME = "Codeux Software, LLC";
 				TargetAttributes = {
 					4C0BA4F81990798800857343 = {
-						DevelopmentTeam = 8482Q6EPL6;
+						DevelopmentTeam = FZ3ZC5YAW4;
 						DevelopmentTeamName = "Codeux Software, LLC";
 						LastSwiftMigration = 1100;
 						ProvisioningStyle = Manual;
@@ -6509,10 +6509,9 @@
 						};
 					};
 					4C1DC5511580420500A47BC9 = {
-						DevelopmentTeam = 8482Q6EPL6;
+						DevelopmentTeam = FZ3ZC5YAW4;
 						DevelopmentTeamName = "Codeux Software, LLC";
 						LastSwiftMigration = 1100;
-						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
@@ -8736,12 +8735,14 @@
 		4C0BA6D51990798800857343 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = FZ3ZC5YAW4;
 			};
 			name = Debug;
 		};
 		4C0BA6D61990798800857343 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = FZ3ZC5YAW4;
 			};
 			name = Release;
 		};
@@ -8762,6 +8763,7 @@
 		4C13442420C75C4900343AB7 /* Release (Sandboxed) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = FZ3ZC5YAW4;
 			};
 			name = "Release (Sandboxed)";
 		};
@@ -8774,6 +8776,15 @@
 		4C13442620C75C4900343AB7 /* Release (Sandboxed) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = FZ3ZC5YAW4;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"TEXTUAL_BUILT_INSIDE_SANDBOX=1",
+					"TEXTUAL_BUILT_WITH_ADVANCED_ENCRYPTION=1",
+					"TEXTUAL_BUILT_WITH_LICENSE_MANAGER=1",
+					"TEXTUAL_BUILT_WITH_HOCKEYAPP_SDK_ENABLED=1",
+					"TEXTUAL_BUILT_WITH_SPARKLE_ENABLED=0",
+				);
 			};
 			name = "Release (Sandboxed)";
 		};
@@ -8807,12 +8818,25 @@
 		4C1DC5711580420500A47BC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				DEVELOPMENT_TEAM = FZ3ZC5YAW4;
 			};
 			name = Debug;
 		};
 		4C1DC5721580420500A47BC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FZ3ZC5YAW4;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"TEXTUAL_BUILT_INSIDE_SANDBOX=0",
+					"TEXTUAL_BUILT_WITH_ADVANCED_ENCRYPTION=1",
+					"TEXTUAL_BUILT_WITH_LICENSE_MANAGER=1",
+					"TEXTUAL_BUILT_WITH_HOCKEYAPP_SDK_ENABLED=1",
+					"TEXTUAL_BUILT_WITH_SPARKLE_ENABLED=1",
+				);
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
